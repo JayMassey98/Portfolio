@@ -1,58 +1,65 @@
 /*-----------------------
 Base Styles
 ------------------------*/
-body
-{
-    background: url(../images/backgroundImage.jpg) center;
-    margin: 0;
-	padding: 0;
-	font-family: "NotoSans", "Raleway", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	font-size: 100%;
-	line-height: 1.2em;
-    font-size: 13.5px;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(240, 240, 240);
+
+html {
+
+    scroll-padding-top: 5.95em;
+    height: 100.1%;
 }
 
-main
-{
+body {
+
+/*  background: url(../images/backgroundImage.jpg) center;  */
+    margin-top: 4.5em;
+	font-family: "Raleway", "Calibri", "Helvetica Neue", sans-serif;
+	font-size: 100%;
+	line-height: 1.2em;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+main {
+
     float: left;
     width: 100%;
 }
 
-#center
-{
+#center {
+
     background-color: #F2F2F2;
-    width: 780.5px;
+    width: 814px;
     margin: auto;
 }
 
-#banner
-{
-    height: 9.5em;
+#banner {
+
+    height: 8.2em;
     width: 100%;
     background-position: center;
-    background: radial-gradient(circle, rgba(16, 64, 128, 1) 25%, rgba(16, 64, 128, 1) 100%);
+    background-color: #525659;
 }
 
-#banner h1
-{
+#banner h1 {
+
     margin: 0;
     padding-top: 0.95em;
 }
 
-#wrapper
-{
+#wrapper {
+
+    margin 0;
     overflow: hidden;
+    padding-bottom: 1.25em;
 }
 
-#footer
-{
+#footer {
+
     color: #fff;
     background: #ccc;
     text-align: center;
-	padding: 4px 0em 4px 0em;
+    padding: 0.5em 0em 0.5em 0em;
     position: relative;
     width: 100%
     bottom: 0;
@@ -62,88 +69,109 @@ main
 Text Sizes
 ------------------------*/
 
-h1
-{
-    color: #F2F2F2;
+h1 {
+
+    color: #ffffff;
     margin: 0.25em 0 0.25em 0;
-    font-size: 4.4em; /* 5.50em */
+    font-size: 3.7em; /* 5.50em */
     text-align: center;
     font-style: italic;
 }
 
-h2
-{
-    color: #104080;
-    font-size: 2em; /* 1.375em */
-    margin: 0 0 0.5em 0;
-	line-height: 1.1;
+h2 {
+
+    color: #c00;
+    font-size: 1.375em; /* 1.375em */
+    margin: 0 0 1em 0;
 }
 
-h3
-{
-    border-bottom: 1em;
-    border-color: #104080;
-    font-size: 1.35em; /* 1.125em */
-    margin: 1.35em 0 1.35em 0;
-	line-height: 1.1;
+h3 {
+
+    font-size: 1.125em; /* 1.125em */
+    margin: 0 0 0.695em 0;
+
+}
+
+h4 {
+
+    font-size: 1.125em;
+    margin: 0 0 0.695em 0;
     font-style: italic;
 
 }
 
-h4
-{
-    color: #104080;
-    font-size: 1.35em; /* 1.125em */
-    margin: -2.45em 0em 1.35em 0em;
-	line-height: 1.1;
+h5 {
 
+    font-size: 1.125em;
+    margin: 0 0 0 0;
+	line-height: 1.1;
+    font-style: italic;
 }
 
-h5
-{
-    font-size: 1.5em;
-    margin: 0 0 0.5em 0;
+h6 {
+
+    font-size: 1.125em;
+    margin: -1em 0 1em 0;
 	line-height: 1.1;
-    text-align: center;
+    font-style: italic;
 }
 
-h6
-{
-    font-size: .875em; /* .875em */
-    margin: 0 0 0.5em 0;
-	line-height: 1.1;
-}
+p {
 
-p
-{
 	margin: 0 0 0 0;
-    font-size: 1.2em; /* .875em */
-	line-height: 1.5;
+    font-size: 1em; /* .875em */
+	line-height: 1.618em;
 }
 
 a { text-decoration: none; }
-a:link { color: #104080; }
-a:visited { color: #104080; }
-a:focus { color: #000; }
-a:active { color: #336;}
+a:link { color: #C00; }
+a:visited { color: #C00; }
+a:focus { color: #C00; }
+a:active { color: #C00;}
 
-a:hover
-{
-    color: #104080;
+a:hover {
+
+    color: #C00;
     transition: color 0.2s ease 0s;
 }
 
-a[href^="#top"]
-{
+a[href^="#top"] {
+
 	font-size: .75em;
-	background: url(../learningJournal/images/up.png) no-repeat left bottom;
 }
 
-li
-{
+li {
+
     margin: 0.5em 0 0.5em 0;
-    font-size: 1.2em; /* 1.1em */
+    font-size: 1em; /* 1.1em */
 	line-height: 1.1em;
+}
+
+#bulletwrap {
+
+	margin: 0.5em 0 1em 0;
+    overflow: hidden;
+}
+
+#bulletwrapend {
+
+	margin: 0.5em 0 0em 0;
+    overflow: hidden;
+}
+
+#datewrap {
+
+    color: #c00;
+    margin: -1.72em 0 0.695em 0;
+    font-style: italic;
+
+}
+
+#locationwrap {
+
+    margin: -1.72em 0 0.695em 0;
+    font-style: italic;
+
 }
 
 label {display: block;}
@@ -153,27 +181,27 @@ input {display: block;}
 Article Posts
 ------------------------*/
 
-article
-{
+article {
+
 	padding-top: 1.5em;
     overflow: hidden;
 }
 
-.post
-{
+.post {
+
     padding: 1.5em;
-    border-width: 0.2em;
+    border-width: 1px;
     border-style: solid;
-    border-color: #104080;
-    background-color: rgba(252, 252, 252, 1);
+    border-color: #C6C6C6;
+    background-color: rgb(255, 255, 255);
 }
 
 /* -----------------------
 Table Styles
 ------------------------*/
 
-table
-{
+table {
+
 	border-spacing: 0;
 	border-collapse: collapse;
 	border-top: 1px solid #ddd;
@@ -182,19 +210,19 @@ table
 	margin: 0 0 20px 0;
 }
 
-table#last
-{
+table#last {
+
     margin: 0 0 0 0;
 }
 
-tbody tr:nth-child(odd)
-{
+tbody tr:nth-child(odd) {
+
 	background-color: #E6E6E6;
 }
 
-th, td
-{
-	font-size: 1.2em;
+th, td {
+
+	font-size: 1em;
     padding: .6em 0 .6em 0;
 	border: 1px solid #ddd;
 	vertical-align: top;
@@ -202,9 +230,9 @@ th, td
 	white-space: nowrap;
 }
 
-caption
-{
-	font-size: 1.2em;
+caption {
+
+	font-size: 1em;
 	font-weight: bold;
 	margin-bottom: .5em;
 	text-transform: uppercase;
@@ -214,21 +242,21 @@ caption
 *See link for more responsive table styling options, explanation etc.
 */
 
-.table-container /*Add a scrollbar to a table for small screen devices*/
-{
+.table-container /*Add a scrollbar to a table for small screen devices*/ {
+
 	width: 100%;
 	overflow-x: auto;
 }
 
-.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/
-{
+.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/ {
+
 	-webkit-appearance: none;
 	width: 14px;
 	height: 14px;
 }
 
-.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/
-{
+.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/ {
+
 	border-radius: 8px;
 	border: 3px solid #fff;
 	background-color: rgba(0, 0, 0, .3);
@@ -242,8 +270,8 @@ Image and Video Layout
 *Remove image width and height attributes from html!
 */
 
-img
-{
+img {
+
 	display: block;
     max-width: 100%;
     border: 1px solid;
@@ -256,14 +284,15 @@ img
 }
 
 .block {
+
   background: #ffffff;
   position: relative;
   margin-top: 100px;
   height: 1000px;
 }
 
-img.comparison
-{
+img.comparison {
+
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -272,8 +301,8 @@ img.comparison
     margin-bottom: 1%;
 }
 
-img.icon
-{
+img.icon {
+
     padding-left: 0.8em;
     border: 0px solid;
     float: left;
@@ -284,33 +313,33 @@ img.icon
     object-position: center;
 }
 
-.imageComparison
-{
+.imageComparison {
+
     text-align: center;
     max-width: 100%;
 }
 
-.leftImage
-{
+.leftImage {
+
     max-width: 49.5%;
     float: left;
 }
 
-.rightImage
-{
+.rightImage {
+
     max-width: 49.5%;
     float: right;
 }
 
-.video-container
-{
+.video-container {
+
     position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
 }
 
-.video-container iframe
-{
+.video-container iframe {
+
     position: absolute;
 	top: 0;
 	left: 0;
@@ -319,8 +348,8 @@ img.icon
     border: 1px solid grey;
 }
 
-.iframe-container iframe
-{
+.iframe-container iframe {
+
     top: 0;
 	left: 0;
 	width: 100%;
@@ -334,63 +363,79 @@ img.icon
 Menu Navigation - vertical layout for smaller screens
 ---------------------------------------------------*/
 
-#menu
-{
+#topbar {
+
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 1);
-    background: radial-gradient(circle, rgba(48, 48, 48, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 1) 100%);
-    padding: 0.80901699437em 0em 0.80901699437em 0em;
+    width: 100%;
+    position: fixed;
+}
+
+#menu {
+
+    background-color: #47484B;
+    padding: 1.35em 0em 1.35em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
     font-size: 1.2em;
-    text-align: center;
+    text-align: right;
 }
 
-#menu li
-{
+#logo {
+
+    float: left;
+}
+
+#logo h1 {
+
+    font-size: 2.5em;
+    text-align: left;
+    padding: 0.665em 0em 0.665em 0.8em;
+    margin: 0 0 0 0;
+}
+
+#menu li {
+
     display: inline;
     margin: 0 .5em 0 .5em;
 }
 
-#menu ul
-{
-	margin: 0;
-	padding: 0;
+#menu ul {
+
+    margin: 0;
+	padding: 0 0.8em 0 0;
 	list-style: none;
 }
 
-#menu a
-{
-    display: inline;
+#menu a {
+
     padding: 0;
     color: #fff;
 }
 
 #menu a:link { color: #fff; }
-#menu a:visited { color: #DFDFDF; }
-#menu a:focus { color: #C00; }
-#menu a:hover { color: #2080FF;
+#menu a:focus { color: #c00000; }
+#menu a:hover { color: #ff0000;
                 transition: color 0.2s ease 0s; }
-#menu a:active { color: #C00; }
+#menu a:active { color: #c00000; }
 
 /* ---------------------------------------------------
 Contact Details - For receiving information from users
 ----------------------------------------------------*/
 
-fieldset
-{
+fieldset {
+
     margin-bottom: 1%;
 }
 
-textarea
-{
+textarea {
+
 	width: 98%;
 	border: 1px solid #a9a9a9;
 }
 
-input[type="submit"]
-{
+input[type="submit"] {
+
 	color: #000;
 	background: linear-gradient(to bottom right, white, whitesmoke);
 	line-height: 1.25;
@@ -401,22 +446,22 @@ input[type="submit"]
 	transition: all .2s ease-in-out;
 }
 
-input[type="submit"]:hover
-{
+input[type="submit"]:hover {
+
 	color:#292b2c;
 	background-color:#e6e6e6;
 	border-color:#adadad
 }
 
-input[type="submit"]:focus
-{
+input[type="submit"]:focus {
+
 	color:#292b2c;
 	background-color:#e6e6e6;
 	border-color:#adadad
 }
 
-input[type="reset"]
-{
+input[type="reset"] {
+
 	color: #000;
 	background: linear-gradient(to bottom right, white, whitesmoke);
 	line-height: 1.25;
@@ -427,123 +472,55 @@ input[type="reset"]
 	transition: all .2s ease-in-out;
 }
 
-input[type="reset"]:hover
-{
+input[type="reset"]:hover {
+
 	color:#292b2c;
 	background-color:#e6e6e6;
 	border-color:#adadad
 }
 
-input[type="reset"]:focus
-{
+input[type="reset"]:focus {
+
 	color:#292b2c;
 	background-color:#e6e6e6;
 	border-color:#adadad
 }
 
-#textForm
-{
-    width: 100%;
-}
+#formIndexButtons {
 
-#numberForm
-{
-    width: 100%;
-}
-
-#emailForm
-{
-    width: 100%;
-}
-
-#message
-{
-    width: 100%;
-}
-
-#pinForm
-{
-    width: 100%;
-}
-
-#colour
-{
-    width: 100%;
-}
-
-#date
-{
-    width: 100%;
-}
-
-#range
-{
-    width: 100%;
-}
-
-#rangeBar
-{
-    width: 100%;
-}
-
-#checkAndRadio
-{
-    width: 49.5%;
-    float: left;
-}
-
-#otherForms
-{
-    width: 49.5%;
-    float: right;
-}
-
-#sumbitButton
-{
-    float: left;
-}
-
-#resetButton
-{
-    float: left;
-    padding-left: 1.1em;
-}
-
-#formIndexButtons
-{
     float: left;
     padding-top: 0.8em;
     padding-left: 0.1em;
     padding-bottom: 0.1em;
 }
 
-#formContactButtons
-{
+#formContactButtons {
+
     float: left;
     padding-top: 0.4em;
 }
 
-#formContactPage
-{
+#formContactPage {
+
     float: right;
     width: 50%;
 }
 
-#contactInformation
-{
+#contactInformation {
+
     float: left;
     width: 50%;
 }
 
-#formLayout
-{
+#formLayout {
+
     margin: 1%;
     float: right;
     width: 100%;
 }
 
-#logoLayout
-{
+#logoLayout {
+
     float: inherit;
     width: auto;
 }
@@ -563,6 +540,7 @@ Wider screens - i.e. desktop, laptop, tablet landscape
 	.banner
     {
         padding: 1.5em 3em 1.5em 3em;
+
     }
 
     main
