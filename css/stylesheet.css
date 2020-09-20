@@ -2,10 +2,13 @@
 Base Styles
 ------------------------*/
 
-html {
+html { scroll-padding-top: 5.95em;
+}
 
-    scroll-padding-top: 5.95em;
-    height: 100.1%;
+#page-container {
+
+  position: relative;
+  min-height: 100vh;
 }
 
 body {
@@ -63,6 +66,14 @@ main {
     position: relative;
     width: 100%
     bottom: 0;
+}
+
+#topbar {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
 }
 
 /* -----------------------
@@ -394,6 +405,14 @@ Menu Navigation - vertical layout for smaller screens
     margin: 0 0 0 0;
 }
 
+#logo a:link { color: #fff; }
+#logo a:visited { color: #fff; }
+#logo a:focus { color: #c00000; }
+#logo a:active { color: #c00000; }
+#logo a:hover { color: #ff0000;
+                transition: color 0.2s ease 0s;
+}
+
 #menu li {
 
     display: inline;
@@ -405,6 +424,7 @@ Menu Navigation - vertical layout for smaller screens
     margin: 0;
 	padding: 0 0.8em 0 0;
 	list-style: none;
+
 }
 
 #menu a {
