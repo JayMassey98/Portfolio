@@ -2,8 +2,7 @@
 Base Styles
 ------------------------*/
 
-html { scroll-padding-top: 5.95em;
-}
+html { scroll-padding-top: 5.95em; }
 
 #page-container {
 
@@ -65,7 +64,7 @@ main {
     padding: 0.5em 0em 0.5em 0em;
     position: relative;
     width: 100%
-    bottom: 0;
+    top: 0;
 }
 
 #topbar {
@@ -783,8 +782,3 @@ Mobile screens - portrait
 { /* this class can be placed on an element or empty div as the final element following the last floated div */
 	clear: both;
 }
-
-$(document).scroll(function() {
-  var scroll = $(window).scrollTop();
- $("#header").css("background-position", "0%" + (scroll / -1.8) + "px");
-});
