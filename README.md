@@ -1,2 +1,2 @@
-# portfolio_preview
-A preview of my GitHub portfolio.
+# portfolio
+A portfolio of previous work and passion projects (currently under construction).
