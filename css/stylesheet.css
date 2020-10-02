@@ -14,7 +14,6 @@ body {
     height: 100%;
     width: 100%;
     background-color: #E6E6E6;
-    overflow-y: scroll;
 }
 
 main {
@@ -63,19 +62,6 @@ main {
     box-shadow: 0em 1em 1.5em 1em lightgray;
 }
 
-#footer-large {
-
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 1.25em;
-    color: #fff;
-    background: #ccc;
-    text-align: center;
-    padding: 0.5em 0em 0.5em 0em;
-    box-shadow: 0em 1em 1.5em 1em lightgray;
-}
-
 #topbar {
 
     top: 0;
@@ -83,7 +69,7 @@ main {
     width: 100%;
     position: fixed;
     line-height: 1.2em;
-    background-color: #444444;
+    background-color: #555;
     box-shadow: 0em -1em 1em 1em gray;
 }
 
@@ -109,9 +95,10 @@ h2 {
 
 h3 {
 
-    font-size: 1.125em; /* 1.125em */
-    margin: 0 0 0.695em 0;
-
+	margin: 0.618em 0 0 0;
+    font-size: 1em; /* 1.125em */
+	line-height: 1.618em;
+    text-align: center;
 }
 
 h4 {
@@ -231,6 +218,11 @@ article {
     background-color: rgb(255, 255, 255);
 }
 
+article#blank-module {display: block}
+article#agile-methodology {display: none}
+article#data-structures {display: none}
+article#embedded-systems {display: none}
+
 /* -----------------------
 Table Styles
 ------------------------*/
@@ -241,7 +233,7 @@ table {
 	border-collapse: collapse;
 	border-top: 1px solid #ddd;
     table-layout: fixed;
-	margin: 1em 0 1em 0;
+	margin: 1em 0 1.618em 0;
 }
 
 table#last {
@@ -258,23 +250,23 @@ th, td {
 
 	font-size: 1em;
     padding: .6em 0 .6em 0;
-	border: 1px solid #ddd;
+	border: 1px solid #C6C6C6;
 	vertical-align: top;
 	text-align: center;
 	white-space: nowrap;
 }
 
-td:nth-child(1) {
+td:first-child {
 
     width: 16.18em;
 }
 
-td:not(:first-child) {
+td:not(:first-child):not(:last-child) {
 
     width: 10em;
 }
 
-td:nth-child(4) {
+td:last-child {
 
     width: 16.18em;
 }
@@ -314,10 +306,6 @@ caption {
 /* -----------------------
 Image and Video Layout
 ------------------------*/
-
-/**Makes images 100% width of containing element i.e. flexible
-*Remove image width and height attributes from html!
-*/
 
 img {
 
@@ -406,10 +394,6 @@ img.icon {
     padding-left: 1px;
     padding-bottom: 0.8em;
     border: 1px solid grey;
-}
-
-div::-webkit-scrollbar {
-  display: none;
 }
 
 /* --------------------------------------------------
@@ -528,7 +512,7 @@ Wider screens - i.e. desktop, laptop, tablet landscape
 Mobile screens - portrait
 -----------------------*/
 
-@media (max-width : 60em)
+@media (max-width : 58.9em)
 {
     #menu li:nth-child(1) { display: none; }
 }
