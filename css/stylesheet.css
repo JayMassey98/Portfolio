@@ -299,7 +299,7 @@ Menu Navigation - vertical layout for smaller screens
     padding: 1.1em 0em 1.1em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.21em;
     text-align: right;
 }
 
@@ -399,7 +399,7 @@ Mobile screens - portrait
     #menu li:nth-child(1) { display: none; }
 }
 
-@media (max-width : 51em)
+@media (max-width : 52em)
 {
     #menu li
     {
@@ -414,7 +414,6 @@ Mobile screens - portrait
 
     #banner
     {
-        height: 6.8em;
         width: 100%;
         text-align: center;
         background-position: center;
@@ -440,17 +439,42 @@ Mobile screens - portrait
         white-space: nowrap;
     }
 
-    #footer {
-
+    #footer
+    {
         margin: 0.25em 0 0 0;
         position: relative;
     }
 
     img.comparison
     {
-        display: block;
+        display: inline;
         max-width: 100%;
-        border: 1px solid;
+    }
+
+    .aligned-div-left
+    {
+        max-width: 100%;
+        float: left;
+    }
+
+    .aligned-div-right
+    {
+        padding-left: 0em;
+        max-width: 100%;
+    }
+
+    .aligned-divs table
+    {
+        align-content: center;
+        max-width: 100.2%;
+        margin: 0 0 0.86em 0;
+    }
+
+    .iframe-container iframe
+    {
+        max-width: 99.6%;
+        height: 29.83em;
+
     }
 
 }
