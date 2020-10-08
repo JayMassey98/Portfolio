@@ -4,16 +4,15 @@ Base Styles
 
 html { scroll-padding-top: 5.95em; }
 
-/* #page-container { min-height: 100vh; } */
-
 body {
 
-    margin-top: 4.5em;
+    margin-top: 4em;
 	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
 	font-size: 100%;
     height: 100%;
     width: 100%;
     background-color: #E6E6E6;
+    overflow-y: scroll;
 }
 
 main {
@@ -28,20 +27,6 @@ main {
     margin: auto;
 }
 
-#banner {
-
-    height: 8.2em;
-    width: 100%;
-    background-position: center;
-
-}
-
-#banner h1 {
-
-    margin: 0;
-    padding-top: 0.95em;
-}
-
 #wrapper {
 
     margin 0;
@@ -49,7 +34,7 @@ main {
     padding-bottom: 1.25em;
 }
 
-#footer {
+footer {
 
     position: absolute;
     bottom: 0;
@@ -62,15 +47,22 @@ main {
     box-shadow: 0em 1em 1.5em 1em lightgray;
 }
 
-#topbar {
+#footer_large {
+
+    position: relative;
+
+}
+
+#banner {
 
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
     line-height: 1.2em;
-    background-color: #555;
-    box-shadow: 0em -1em 1em 1em gray;
+    background-color: #404040;
+/*    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 40%, rgba(85,85,85,1) 60%); */
+
 }
 
 /* -----------------------
@@ -79,17 +71,13 @@ Text Sizes
 
 h1 {
 
-    color: #ffffff;
-    margin: 0.25em 0 0.25em 0;
-    font-size: 3.7em; /* 5.50em */
-    text-align: center;
     font-style: italic;
 }
 
 h2 {
 
     color: #c00;
-    font-size: 1.375em; /* 1.375em */
+    font-size: 1.375em;
     margin: 0 0 1em 0;
 }
 
@@ -99,30 +87,6 @@ h3 {
     font-size: 1em; /* 1.125em */
 	line-height: 1.618em;
     text-align: center;
-}
-
-h4 {
-
-    font-size: 1.125em;
-    margin: 0 0 0.695em 0;
-    font-style: italic;
-
-}
-
-h5 {
-
-    font-size: 1.125em;
-    margin: 0 0 0 0;
-	line-height: 1.1;
-    font-style: italic;
-}
-
-h6 {
-
-    font-size: 1.125em;
-    margin: -1em 0 1em 0;
-	line-height: 1.1;
-    font-style: italic;
 }
 
 p {
@@ -155,36 +119,6 @@ li {
     font-size: 1em; /* 1.1em */
 	line-height: 1.1em;
 }
-
-#bulletwrap {
-
-	margin: 0.5em 0 1em 0;
-    overflow: hidden;
-}
-
-#bulletwrapend {
-
-	margin: 0.5em 0 0em 0;
-    overflow: hidden;
-}
-
-#datewrap {
-
-    color: #c00;
-    margin: -1.7em 0 0.695em 0;
-    font-style: italic;
-
-}
-
-#locationwrap {
-
-    margin: -1.72em 0 0.695em 0;
-    font-style: italic;
-
-}
-
-label {display: block;}
-input {display: block;}
 
 /*-----------------------
 Added Font
@@ -231,7 +165,6 @@ table {
 
 	border-spacing: 0;
 	border-collapse: collapse;
-	border-top: 1px solid #ddd;
     table-layout: fixed;
 	margin: 1em 0 1.618em 0;
 }
@@ -271,12 +204,15 @@ td:last-child {
     width: 16.18em;
 }
 
-caption {
+.aligned-divs table {
 
-	font-size: 1em;
-	font-weight: bold;
-	margin-bottom: .5em;
-	text-transform: uppercase;
+    margin: 0.5em -2px 0.86em 0;
+
+}
+
+.aligned-divs td:not(:first-child) {
+
+    width: 30em;
 }
 
 /**Responsive table styles sourced from http://maxdesign.com.au/articles/simple-responsive-table/
@@ -312,95 +248,45 @@ img {
 	display: block;
     max-width: 100%;
     border: 1px solid;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 0.5em;
 
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-.block {
-
-  background: #ffffff;
-  position: relative;
-  margin-top: 100px;
-  height: 1000px;
 }
 
 img.comparison {
 
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+
 }
 
-img.icon {
+.aligned-div-left {
 
-    padding-left: 0.8em;
-    border: 0px solid;
-    float: left;
-    max-width: 3.5em;
-    min-width: 1em;
-    max-height: 3.5em;
-    width: 100%;
-    object-position: center;
-}
-
-.imageComparison {
-
-    text-align: center;
-    max-width: 100%;
-}
-
-.leftImage {
-
-    max-width: 49.5%;
+    max-width: 48.18%;
     float: left;
 }
 
-.rightImage {
+.aligned-div-right {
 
-    max-width: 49.5%;
-    float: right;
-}
-
-.video-container {
-
-    position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-}
-
-.video-container iframe {
-
-    position: absolute;
-	top: 0;
-	left: 0;
-    height: 100%;
-    width: 100%;
-    border: 1px solid grey;
+    padding-left: 1.625em;
+    max-width: 48.18%;
+    float: left;
 }
 
 .iframe-container iframe {
 
     top: 0;
 	left: 0;
-	width: 100%;
-	height: 20em;
-    padding-left: 1px;
-    padding-bottom: 0.8em;
-    border: 1px solid grey;
+	height: 29.84em;
+    width: 99.8%;
+    margin-top: 0.5em;
+    border: 1px solid #404040;
 }
 
 /* --------------------------------------------------
 Menu Navigation - vertical layout for smaller screens
 ---------------------------------------------------*/
 
-#topbar {
+#banner {
 
     top: 0;
     left: 0;
@@ -410,23 +296,19 @@ Menu Navigation - vertical layout for smaller screens
 
 #menu {
 
-    padding: 1.35em 0em 1.35em 0em;
+    padding: 1.1em 0em 1.1em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
     font-size: 1.2em;
     text-align: right;
 }
 
-#logo {
-
-    float: left;
-}
-
 #logo h1 {
 
-    font-size: 2.5em;
+    float: left;
+    font-size: 2.3em;
     text-align: left;
-    padding: 0.665em 0em 0.665em 0.8em;
+    padding: 0.6em 0em 0.6em 0.7em;
     margin: 0 0 0 0;
 }
 
@@ -524,7 +406,7 @@ Mobile screens - portrait
         display: none;
     }
 
-    #topbar
+    #banner
     {
         position: absolute;
         padding-bottom: 1px;
@@ -563,6 +445,14 @@ Mobile screens - portrait
         margin: 0.25em 0 0 0;
         position: relative;
     }
+
+    img.comparison
+    {
+        display: block;
+        max-width: 100%;
+        border: 1px solid;
+    }
+
 }
 
 /*float/clear classes */
