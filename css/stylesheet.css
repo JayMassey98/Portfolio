@@ -343,7 +343,7 @@ Menu Navigation - vertical layout for smaller screens
 
 #menu {
 
-    padding: 0.618em 0em 0.618em 0em;
+    padding: 0.618em 0em 0em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
     font-size: 1.618em;
@@ -356,7 +356,7 @@ Menu Navigation - vertical layout for smaller screens
     font-size: 4em;
     text-align: center;
     text-transform: none;
-    padding: 0.6em 0em 0.5em 0em;
+    padding: 0.7em 0em 0.5em 0em;
 }
 
 #logo a:link { color: #000000; }
