@@ -6,13 +6,12 @@ html { scroll-padding-top: 5.95em; }
 
 body {
 
-    margin-top: 4em;
 	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
 	font-size: 100%;
     height: 100%;
     width: 100%;
-    background-color: #E6E6E6;
     overflow-y: scroll;
+    background-color: #f9f9f9;
 }
 
 main {
@@ -57,11 +56,14 @@ footer {
 
     top: 0;
     left: 0;
-    width: 100%;
-    position: fixed;
+    width: 812px;
+    margin: auto;
     line-height: 1.2em;
-    background-color: #404040;
-/*    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 40%, rgba(85,85,85,1) 60%); */
+    background-color: #ffffff;
+    border: 1px solid #D1D1D1;
+    border-bottom: 0px;
+    margin-top: 1.375em;
+    margin-bottom: -1.5em;
 
 }
 
@@ -71,22 +73,60 @@ Text Sizes
 
 h1 {
 
-    font-style: italic;
+    color: #c00;
+    font-size: 1.375em;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 h2 {
 
     color: #c00;
     font-size: 1.375em;
-    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    padding-top: 1.375em;
+    margin: 0;
 }
 
 h3 {
 
-	margin: 0.618em 0 0 0;
+	margin: -0.5em 0 0 0;
+    font-size: 1.1em; /* 1.125em */
+    font-weight: bold;
+}
+
+h4 {
+
+	margin: 0.4em 0 0 0;
+    font-size: 1.1em; /* 1.125em */
+    font-style: italic;
+    font-weight: normal;
+}
+
+h5 {
+
+	margin: -1.125em 0 1em 0;
+    color: #c00010;
+    font-size: 1.1em; /* 1.125em */
+    font-style: italic;
+    font-style: normal;
+    text-align: right;
+}
+
+h6 {
+
+	margin: 1em 0 0 0;
     font-size: 1em; /* 1.125em */
-	line-height: 1.618em;
+    line-height: 1.618em;
+    font-weight: bold;
     text-align: center;
+}
+
+hr {
+
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #000000;
 }
 
 p {
@@ -97,14 +137,15 @@ p {
 }
 
 a { text-decoration: none; }
-a:link { color: #C00; }
-a:visited { color: #C00; }
-a:focus { color: #C00; }
-a:active { color: #C00; }
+a { font-weight: bold;}
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:focus { color: #000000; }
+a:active { color: #000000; }
 
 a:hover {
 
-    color: #C00;
+    color: #C00010;
     transition: color 0.2s ease 0s;
 }
 
@@ -113,12 +154,15 @@ a[href^="#top"] {
 	font-size: .75em;
 }
 
+ul { margin-bottom: 0em }
+
 li {
 
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.5em 0 0 -1.35em;
     font-size: 1em; /* 1.1em */
 	line-height: 1.1em;
 }
+
 
 /*-----------------------
 Added Font
@@ -140,16 +184,20 @@ article {
 
 	padding-top: 1.5em;
     overflow: hidden;
-    box-shadow: 0 1em 1em -1em gray;
 }
 
 .post {
 
     padding: 1.5em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #C6C6C6;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-top: 0px;
+}
+
+.list li {
+
+    margin: 0.5em 0 0em -1.35em;
+	line-height: 1.618em;
 }
 
 article#blank-module {display: block}
@@ -289,34 +337,33 @@ Menu Navigation - vertical layout for smaller screens
 #banner {
 
     top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
+    align-content: center;
+    z-index: 1000;
 }
 
 #menu {
 
-    padding: 1.1em 0em 1.1em 0em;
+    padding: 0.618em 0em 0.618em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
-    font-size: 1.21em;
-    text-align: right;
+    font-size: 1.618em;
+    text-align: center;
 }
 
 #logo h1 {
 
-    float: left;
-    font-size: 2.3em;
-    text-align: left;
-    padding: 0.6em 0em 0.6em 0.7em;
-    margin: 0 0 0 0;
+    float: center;
+    font-size: 4em;
+    text-align: center;
+    text-transform: none;
+    padding: 0.6em 0em 0.5em 0em;
 }
 
-#logo a:link { color: #fff; }
-#logo a:visited { color: #fff; }
-#logo a:focus { color: #c00000; }
-#logo a:active { color: #c00000; }
-#logo a:hover { color: #ff0000;
+#logo a:link { color: #000000; }
+#logo a:visited { color: #C00010; }
+#logo a:focus { color: #C00010; }
+#logo a:active { color: #C00010; }
+#logo a:hover { color: #C00010;
                 transition: color 0.2s ease 0s;
 }
 
@@ -329,17 +376,16 @@ Menu Navigation - vertical layout for smaller screens
 #menu ul {
 
     margin: 0;
-	padding: 0 0.8em 0 0;
+	padding: 0;
 	list-style: none;
 
 }
 
 #menu a { padding: 0; }
-#menu a:link { color: #fff; }
-#menu a:visited { color: #fff; }
-#menu a:hover { color: #ff0000;
-                transition: color 0.2s ease 0s; }
-#menu a:active { color: #c00; }
+#menu a:link { color: #000000; }
+#menu a:visited { color: #000000; }
+#menu a:hover { color: #cc0010; transition: color 0.2s ease 0s; }
+#menu a:active { color: #C00010; }
 
 -
 

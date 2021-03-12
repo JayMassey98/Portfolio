@@ -14,64 +14,24 @@
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-        <script>
-
-            function setArticles() {
-
-                articleBlankModule = document.getElementById('blank-module');
-                articleAgileManagement = document.getElementById('agile-methodology');
-                articleDataStructures = document.getElementById('data-structures');
-                articleEmbeddedSystems = document.getElementById('embedded-systems');
-            }
-
-            function openAgileManagement() {
-
-                articleBlankModule.style.display = 'none';
-                articleAgileManagement.style.display = 'block';
-                articleDataStructures.style.display = 'none';
-                articleEmbeddedSystems.style.display = 'none';
-            }
-
-            function openDataStructures() {
-
-                articleBlankModule.style.display = 'none';
-                articleAgileManagement.style.display = 'none';
-                articleDataStructures.style.display = 'block';
-                articleEmbeddedSystems.style.display = 'none';
-            }
-
-            function openEmbeddedSystems() {
-
-                articleBlankModule.style.display = 'none';
-                articleAgileManagement.style.display = 'none';
-                articleDataStructures.style.display = 'none';
-                articleEmbeddedSystems.style.display = 'block';
-            }
-
-        </script>
-
     </head>
 
-    <body onload="setArticles()">
+    <body>
 
         <div id="wrapper">
 
             <div id="banner">
 
-                <div id="logo">
-
-                    <h1><a href="index.html">Jay Massey</a></h1>
-
-                </div>
+                <div id="logo"><h1>Jay Massey</h1></div>
 
                 <div id="menu">
 
                     <ul>
 
-                        <li><a href="index.html">Personal CV</a></li>
-                        <li><a href="deliverables.html">Deliverables</a></li>
-                        <li><a href="side-projects.html">Side Projects</a></li>
-                        <li><a href="contact-page.html">Contact Page</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="university.html">University</a></li>
+                        <li><a href="projects.html">Projects</a></li>
 
                     </ul>
 
@@ -81,13 +41,11 @@
 
             <div id="center">
 
-                <main id="content">
+                <article>
 
-                    <article>
+                    <div class="post">
 
-                        <header class="post">
-
-                            <h2>University Modules</h2>
+                        <h1>University Modules</h1><hr>
 
                             <p>A breakdown of various modules, as well as their corresponding project deliverables, are shown below.</p>
 
@@ -116,7 +74,7 @@
                                     <td>85</td>
                                     <td>1st</td>
                                     <td>44</td>
-                                    <td><a href="#agile-methodology" onclick="openAgileManagement()">Agile Management</a></td>
+                                    <td><a href="reports/Agile-Management-Report.pdf">Agile Management</a></td>
                                     </tr>
 
                                     <tr>
@@ -124,7 +82,7 @@
                                     <td>73</td>
                                     <td>1st</td>
                                     <td>26</td>
-                                    <td><a href="#data-structures" onclick="openDataStructures()">Utilising Data Structures</a></td>
+                                    <td><a href="reports/Utilising-Data-Structures.pdf">Utilising Data Structures</a></td>
                                     </tr>
 
                                     <tr>
@@ -140,7 +98,7 @@
                                     <td>70</td>
                                     <td>1st</td>
                                     <td>40</td>
-                                    <td><a href="#embedded-systems" onclick="openEmbeddedSystems()">Logic-Based Systems</a></td>
+                                    <td><a href="reports/Logic-Based-Systems.pdf">Logic-Based Systems</a></td>
                                     </tr>
 
                                 </table>
@@ -151,17 +109,7 @@
 
                             <p style="text-align:center">As well as the various products listed above, I also have experience in the following areas:</p>
 
-                            <h3>Agile Management • Assembly Language • C • CSS • Data Structures • Database Management • Discrete Mathematics • Embedded Programming • Human-Computer Interaction • HTML • Intelligent Systems • Internet Protocol Suite (TCP/IP) • Java • JavaScript • JML • Machine Learning • OCL • Object-Oriented Programming • Perspectives • Python • Requirements Analysis • SQL • UML</h3>
-
-                        </header>
-
-                    </article>
-
-                    <article id="blank-module">
-
-                        <header class="post">
-
-                            <p style="text-align:center">Click one of the available products produced above in order to see it outlined here in more detail.</p>
+                            <h6>Agile Management • Assembly Language • C • CSS • Data Structures • Database Management • Discrete Mathematics • Embedded Programming • Human-Computer Interaction • HTML • Intelligent Systems • Internet Protocol Suite (TCP/IP) • Java • JavaScript • JML • Machine Learning • OCL • Object-Oriented Programming • Perspectives • Python • Requirements Analysis • SQL • UML</h6>
 
                         </header>
 
