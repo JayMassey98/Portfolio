@@ -287,9 +287,75 @@ td:last-child {
 	background-color: rgba(0, 0, 0, .3);
 }
 
-/* -----------------------
+/* -----------------
+Custom Table Layouts
+------------------*/
+
+#showcase-build table {
+
+	margin-bottom: 0.66em;
+}
+
+#showcase-build td {
+
+    width: 25em;
+    text-align: left;
+    padding: 0 0 0 0;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#showcase-build td:nth-child(1) {
+
+    width: 4.9em;
+}
+
+#showcase-build td:nth-child(3) {
+
+    width: 7.5em;
+}
+
+#cpu-timings table {
+
+	margin-bottom: 0.5em;
+}
+
+#cpu-timings td:last-child {
+
+    width: 10em;
+}
+
+#cpu-timings td:last-child {
+
+    width: 10em;
+}
+
+#ram-timings table {
+
+	margin-bottom: 0.45em;
+}
+
+#ram-timings th:nth-child(4) {
+
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#ram-timings td:nth-child(4) {
+
+    width: 24px;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#ram-timings td:not(:nth-child(4)) {
+
+    width: 122px;
+}
+
+/* -------------------
 Image and Video Layout
-------------------------*/
+--------------------*/
 
 img {
 
