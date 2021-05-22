@@ -506,27 +506,21 @@ Wider screens - i.e. desktop, laptop, tablet landscape
 Mobile screens - portrait
 -----------------------*/
 
-@media (max-width : 58.9em)
-{
-    #menu li:nth-child(1) { display: none; }
-}
-
 @media (max-width : 52em)
 {
     #menu li
     {
-        display: none;
-    }
-
-    #banner
-    {
-        position: absolute;
-        padding-bottom: 1px;
+        display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 
     #banner
     {
         width: 100%;
+        margin-top: 0em;
+        border: 0px solid;
+        padding-bottom: 1px;
         text-align: center;
         background-position: center;
     }
@@ -539,6 +533,11 @@ Mobile screens - portrait
     main
     {
         width: 100%;
+    }
+
+    .article
+    {
+        border: 0px solid #000000;
     }
 
     th, td

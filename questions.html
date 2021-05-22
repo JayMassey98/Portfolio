@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Jay Massey - Portfolio</title>
+
+        <link rel="icon" href="images/favicon.png">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <div id="banner">
+
+                <div id="logo"><h1>Jay Massey</h1></div>
+
+                <div id="menu">
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="university.html">University</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="center">
+
+                <article>
+
+                    <div class="post">
+
+                        <h1>Questions</h1><hr>
+
+                        <ul>
+
+                        <li><a href="#question-1">1) Describe a software challenge you recently faced, and how you solved it.</a></li>
+                        <li><a href="#question-2">2) Describe the largest software project you worked on, and how you organised it.</a></li>
+
+                        </ul>
+
+                        <div id="question-1"><h2>Question 1</h2><hr></div>
+
+                        <newline><b><p style="margin-top: 1em; margin-bottom: 1em;">Describe a software challenge you recently faced, and how you solved it.</p></b></newline>
+
+                        <p style="margin-bottom: 1em;"><i>The project talked about in this question can be viewed from the <a href="https://jaymassey98.github.io/portfolio/reports/Utilising-Data-Structures.pdf">Data Structures</a> report.</i></p>
+
+                        <p style="margin-bottom: 1em;">I was working on a project that required me to design a process scheduler using whatever algorithm I desired. The only requirement was that the scheduler needed the ability to <b><i>prioritise tasks</i></b> to be one of three levels on initialisation, however these priorities could later be changed <b><i>to avoid task stagnation</i></b> if needed. I started to familiarise myself with many algorithms such as First Come First Serve, Shortest Job First, and Priority Scheduling, in order to determine what the most efficient algorithm for the task was. While many of the algorithms I researched worked well in certain scenarios, I felt like they did not achieve the efficiency I was looking for. After trying to weigh the varying pros and cons of each of the algorithms against one another, I decided a better approach would be to list the variables I needed to consider in order to make the most efficient scheduler possible, each of which are listed below:</p>
+
+                        <ul>
+
+                        <li><b>Completion Time</b> - The time that a particular process is completed.</li>
+                        <li><b>Turnaround Time</b> - The completion time subtracted by the arrival time.</li>
+                        <li><b>Waiting Time</b> - The amount of time a process is waiting in order to be processed.</li>
+                        <li><b>Response Time</b> - The time it takes from a process arriving until the first response.</li>
+
+                        </ul>
+
+                        <p style="margin-top: 1em; margin-bottom: 1em;">These variables needed to be as low as possible, in order for the following to be as high as possible:</p>
+
+                        <ul><li><b>Throughput</b> - The number of processes completed per time unit (seconds, minutes, etc).</li></ul>
+
+                        <p style="margin-top: 1em; margin-bottom: 1em;">These are the factors I kept in mind when designing my process scheduler. I used Priority Scheduling as a base algorithm, but created an aging system that added points to all processes that have not yet been completed. When a process initially arrives, its age is tracked until it has been fully processed. When a process has an age greater than a set limit, the amount of points attributed to it means that it will have reached the top of the priority queue. This limit was not set in stone; rather it was calculated using the average burst time of the completed processes. This meant that whilst I was not able to use actual bursts in the calculations, I was able to use an estimate based on the real data that was being passed through the scheduler. <b><i>The more processes that arrived in the system</i></b>, the more data it had to work out what the average burst time is, and therefore <b><i>the more efficient the scheduler became</i></b>.</p>
+
+                        <p style="margin-bottom: 1em;">This was particularly helpful in working out the order of processes when longer processes entered the system. <b><i>If a process was taking longer than the average burst time</i></b>, the system knew that it must be very close to competition and therefore <b><i>it continued to be processed for the final few bursts</i></b>, rather than switching to a new process. <b><i>This prevented long process starvation</i></b>, as slightly longer processes were allowed to finish being processed when previously they were not. This would not have been the case if I had simply used default priority scheduling, which would have reduced the efficiency.</p>
+
+                        <p><b><i>These solutions decrease the average waiting and turnaround time</i></b>, resulting in more processes being completed quicker than they were before. Whilst the brief only required hard coding 5 processes into the system as it was mainly testing my algorithm application, the way it works would allow it to be expanded to an infinite number of processes. Therefore, if I were to reattempt this task in the future, I would change the processes to be dynamic rather than only allowing 5 processes in the final code.</p>
+
+                        <div id="question-2"><h2>Question 2</h2><hr></div>
+
+                        <newline><b><p style="margin-top: 1em; margin-bottom: 1em;">Describe the largest software project you worked on, and how you organised it.</p></b></newline>
+
+                        <p style="margin-bottom: 1em;"><i>The project talked about in this question can be viewed from the <a href="https://jaymassey98.github.io/portfolio/reports/Agile-Management-Report.pdf">Agile Management</a> report.</i></p>
+
+                        <p style="margin-bottom: 1em;">I have worked on various software projects ranging between 1 to 6 people on the team. My largest project in terms of deliverables is an application prototype that I developed in university for a client in a team of 3. The client was a biology teacher who wanted a fun and interactive way of teaching one of their modules to their KS3 students (Years 7 to 9), demonstrated through a short playable demo.</p>
+
+                        <p style="margin-bottom: 1em;">We came up with various ideas until we settled on an interactive game about patients coming into your doctor’s office and asking questions related to their studies. Each patient would give various symptoms that were taken directly from the school module, and it was up to the player to work out based on the information given how best to treat the issue. This allowed the kids to develop their knowledge of the module in a more fun and interactive way then simply reading and reciting their biology books.</p>
+
+                        <p style="margin-bottom: 1em;">The project went through all the stages <b><i>from conception to the completion of a playable demo</i></b>, which was ready to be uploaded and used as a first introduction level. This was <b><i>managed through many agile methodologies</i></b>, such as <b><i>scrums and sprints</i></b>, allowing my team consistent interaction and feedback with the client. <b><i>Each person</i></b> in the team was <b><i>allocated set tasks</i></b> based on their skillset, decided as a team in the sprint meetings, <b><i>in order to plan and organise the work and judge our weekly progress</i></b>.</p>
+
+                        <p style="margin-bottom: 1em;">Each week, I arranged a sprint meeting with my team and the client to discuss various topics of the week. Towards the beginning of the project, this included <b><i>testing relevant competition in the market</i></b>, creating a list of our <b><i>technical specifications</i></b>, as well as a <b><i>usability test plan</i></b>. As time went on, we started <b><i>drafting the initial UI</i></b>, developing a <b><i>storyboard</i></b>, and <b><i>utilising our previous market research</i></b> to help us in choosing our art style. In the following sprints, we developed <b><i>use case diagrams</i></b>, produced <b><i>high-level design architecture</i></b>, and monitored <b><i>accessibility considerations</i></b> that could affect product usability.</p>
+
+                        <p style="margin-bottom: 1em;">As each sprint went by, my team and I would discuss with the client how each stage of the project was developing. For example, our <b><i>draft</i></b> UI turned into a more <b><i>defined</i></b> UI, and eventually a <b><i>finalised</i></b> UI. Once all of the elements of our project had gone through the process of finalisation, me and my team <b><i>tested the application with our audience</i></b> of KS3 students. This allowed us to make final tweaks, alongside the general debugging of any potential code issues, before finally submitting our created demo.</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <footer id="footer_large">
+
+            <small>© 2021, Jay Massey</small>
+
+        </footer>
+
+    </body>
+
+</html>
