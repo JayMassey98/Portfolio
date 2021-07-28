@@ -1,0 +1,7 @@
+﻿  SyntaxFamiliarisation.cpp
+C:\Users\masse\Documents\Projects\C++\SyntaxFamiliarisation\SyntaxFamiliarisation\SyntaxFamiliarisation.cpp(56,32): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  SyntaxFamiliarisation.vcxproj -> C:\Users\masse\Documents\Projects\C++\SyntaxFamiliarisation\x64\Debug\SyntaxFamiliarisation.exe

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1623959277 source:c:\users\masse\documents\projects\c\classinheritance\main.c
+	<ctype.h>
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
