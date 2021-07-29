@@ -5,8 +5,6 @@
 #include <string.h>     // allows string functions
 #include <time.h>       // allows time()
 
-bool main_loop = true;
-
 int random(int min, int max)
 {
     srand((unsigned)time(0));
@@ -49,7 +47,7 @@ void animal(char* type, char* name, int age)
 
 int main()
 {
-    while (main_loop == true)
+    while (true)
     {
         char type[70];
         char name[70];  // standard set by the UK Government Data
@@ -61,7 +59,7 @@ int main()
         for (int i = 0; i < strlen(type); i++) {
         type[i] = tolower((unsigned char) type[i]); }
 
-        if (!strcmp(type, "end")) { main_loop = false; break; }
+        if (!strcmp(type, "end")) { break; }
 
         printf("\nChoose a name for your %s: ", type);
         scanf("%s", name);

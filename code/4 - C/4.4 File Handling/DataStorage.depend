@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1626189956 source:c:\users\masse\documents\projects\c\datastorage\main.c
-	<ctype.h>
-	<stdbool.h>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-

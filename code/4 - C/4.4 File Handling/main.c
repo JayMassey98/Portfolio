@@ -4,6 +4,8 @@
 #include <stdlib.h>     // allows malloc function
 #include <string.h>     // allows string functions
 
+// project still under construction
+
 int total_animals = 0;
 int total_groups = 0;
 int animal_limit = 10;
