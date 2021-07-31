@@ -141,12 +141,12 @@ void input_animal()
     data_log.close();
 
     std::ifstream deleted_ids_log;
-    deleted_ids_log.open("deleted_ids.csv");
+    deleted_ids_log.open("deleted.csv");
 
     std::ofstream temp_log;
     temp_log.open("temp.csv");
 
-    if (!deleted_ids_log.is_open()) { std::cout << "Error: deleted_ids.csv open." << "\n"; }
+    if (!deleted_ids_log.is_open()) { std::cout << "Error: deleted.csv open." << "\n"; }
 
     while (deleted_ids_log.peek() != EOF)
     {
@@ -157,8 +157,8 @@ void input_animal()
     deleted_ids_log.close();
     temp_log.close();
 
-    remove("deleted_ids.csv");
-    if (rename("temp.csv", "deleted_ids.csv") != 0) { std::cout << "Error: temp.csv open." << "\n"; }
+    remove("deleted.csv");
+    if (rename("temp.csv", "deleted.csv") != 0) { std::cout << "Error: temp.csv open." << "\n"; }
 }
 
 void load_data()
@@ -191,9 +191,9 @@ void load_data()
     data_log.close();
 
     std::ifstream deleted_ids_log;
-    deleted_ids_log.open("deleted_ids.csv");
+    deleted_ids_log.open("deleted.csv");
 
-    if (!deleted_ids_log.is_open()) { std::cout << "Error: deleted_ids.csv open." << "\n"; }
+    if (!deleted_ids_log.is_open()) { std::cout << "Error: deleted.csv open." << "\n"; }
 
     while (deleted_ids_log.peek() != EOF)
     {
@@ -272,7 +272,7 @@ void remove_animal()
             }
 
             std::ofstream deleted_ids_log;
-            deleted_ids_log.open("deleted_ids.csv", std::ios_base::app);
+            deleted_ids_log.open("deleted.csv", std::ios_base::app);
             deleted_ids_log << id_input << "\n";
             deleted_ids_log.close();
 

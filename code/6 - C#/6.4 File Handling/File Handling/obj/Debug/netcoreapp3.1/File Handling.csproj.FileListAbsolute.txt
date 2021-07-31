@@ -1,0 +1,13 @@
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.exe
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.deps.json
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.runtimeconfig.json
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.runtimeconfig.dev.json
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.dll
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\bin\Debug\netcoreapp3.1\File Handling.pdb
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.csproj.AssemblyReference.cache
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.AssemblyInfoInputs.cache
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.AssemblyInfo.cs
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.csproj.CoreCompileInputs.cache
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.dll
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.pdb
+C:\Users\masse\Documents\Projects\portfolio\code\6 - C#\6.4 File Handling\File Handling\obj\Debug\netcoreapp3.1\File Handling.genruntimeconfig.cache
