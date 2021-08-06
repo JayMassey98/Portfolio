@@ -130,13 +130,13 @@ void display_animals()
 
         for (int i = 0; i < total_groups; i++)
         {
-            printf("\nCollection of %s's:\n\n", animal_groups[i]);
+            printf("\nCollection of %ss:\n\n", animal_groups[i]);
 
             for (int n = 0; n < total_animals; n++)
             {
                 if (strcmp(animal_groups[i], animal_types[n]) == 0)
                 {
-                    printf("%i\t%s\t%s\t%i\n", animal_ids[n], animal_types[n], animal_names[n], animal_ages[n]);
+                    printf("%s\tAge %i\t ID #%i\n", animal_names[n], animal_ages[n], animal_ids[n]   );
                 }
             }
         }
@@ -150,6 +150,7 @@ void help_options()
     printf("\nThe available commands:\n\n"
            "/add\t\tAdd a new animal into the system.\n"
            "/display\tDisplays all animals in the system.\n"
+           "/debug\t\tShows several key variable values.\n"
            "/end\t\tTerminates the program immediately.\n"
            "/help\t\tDisplays all available commands.\n"
            "/remove\t\tRemove an animal from the system.\n\n");

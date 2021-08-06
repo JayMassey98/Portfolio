@@ -91,36 +91,43 @@ h2 {
 h3 {
 
 	margin: -0.5em 0 0 0;
-    font-size: 1.1em; /* 1.125em */
+    font-size: 1.1em;
     font-weight: bold;
 }
 
 h4 {
 
-	margin: 0.4em 0 0 0;
-    font-size: 1.1em; /* 1.125em */
+	margin: -1.125em 0 0 0;
+    font-size: 1.1em;
     font-style: italic;
-    font-weight: normal;
+    text-align: right;
 }
 
 h5 {
 
-	margin: -1.125em 0 1em 0;
-    color: #c00010;
-    font-size: 1.1em; /* 1.125em */
+	margin: 0.4em 0 0 0;
+    font-size: 1.1em;
     font-style: italic;
-    font-style: normal;
-    text-align: right;
+    font-weight: normal;
 }
 
 h6 {
 
+	margin: -1.125em 0 1em 0;
+    color: #c00010;
+    font-size: 1.1em;
+    font-style: normal;
+    text-align: right;
+}
+
+/* h7 {
+
 	margin: 1em 0 0 0;
-    font-size: 1em; /* 1.125em */
+    font-size: 1em;
     line-height: 1.618em;
     font-weight: bold;
     text-align: center;
-}
+} */
 
 hr {
 

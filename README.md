@@ -1,4 +1,4 @@
 # portfolio
-A portfolio of produced work and passion projects.
+A portfolio of produced code and other passion projects.
 
-The website is public but still under construction, with new projects being uploaded intermittently.
+New projects are uploaded to this portfolio intermittently.
