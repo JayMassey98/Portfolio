@@ -1,0 +1,7 @@
+TODO:
+
+* Create AMMO (Automated Monthly Music Outputter).
+    - Add an automated-monthly-music-outputter submodule.
+    - Pull monthly data from https://favoritemusic.guru/.
+    - Create a new Spotify playlist called <month> <year>.
+    - Add the top 50 songs of the month to this playlist.

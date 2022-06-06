@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1627567386 source:c:\users\masse\documents\projects\portfolio\code\4 - c\4.1 syntax familiarisation\main.c
-	<stdbool.h>
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-

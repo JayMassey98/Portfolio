@@ -1,0 +1,6 @@
+TODO:
+
+* Create mass-cpp-radio code.
+    - Based on mass-c-radio code.
+    - Project used as a template.
+    - Include as a git submodule.
