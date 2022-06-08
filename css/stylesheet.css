@@ -1,11 +1,14 @@
-/*-----------------------
+/*---------
 Base Styles
-------------------------*/
+---------*/
 
-html { scroll-padding-top: 5.95em; }
+html
+{
+    scroll-padding-top: 5.95em;
+}
 
-body {
-
+body
+{
 	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
 	font-size: 100%;
     height: 100%;
@@ -14,27 +17,26 @@ body {
     background-color: #f9f9f9;
 }
 
-main {
-
+main
+{
     float: left;
     width: 100%;
 }
 
-#center {
-
+#center
+{
     width: 814px;
     margin: auto;
 }
 
-#wrapper {
-
-    margin 0;
+#wrapper
+{
+    margin: 0;
     overflow: hidden;
-    padding-bottom: 1.25em;
 }
 
-footer {
-
+footer
+{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -46,14 +48,14 @@ footer {
     box-shadow: 0em 1em 1.5em 1em lightgray;
 }
 
-#footer_large {
-
+#footer_large
+{
+    margin-top: 1.25em;
     position: relative;
-
 }
 
-#banner {
-
+#banner
+{
     top: 0;
     left: 0;
     width: 812px;
@@ -64,23 +66,24 @@ footer {
     border-bottom: 0px;
     margin-top: 1.375em;
     margin-bottom: -1.5em;
-
 }
 
-/* -----------------------
+
+
+/*--------
 Text Sizes
-------------------------*/
+--------*/
 
-h1 {
-
+h1
+{
     color: #c00;
     font-size: 1.375em;
     text-transform: uppercase;
     margin: 0;
 }
 
-h2 {
-
+h2
+{
     color: #c00;
     font-size: 1.375em;
     text-transform: uppercase;
@@ -88,31 +91,31 @@ h2 {
     margin: 0;
 }
 
-h3 {
-
+h3
+{
 	margin: -0.5em 0 0 0;
     font-size: 1.1em;
     font-weight: bold;
 }
 
-h4 {
-
+h4
+{
 	margin: -1.125em 0 0 0;
     font-size: 1.1em;
     font-style: italic;
     text-align: right;
 }
 
-h5 {
-
+h5
+{
 	margin: 0.4em 0 0 0;
     font-size: 1.1em;
     font-style: italic;
     font-weight: normal;
 }
 
-h6 {
-
+h6
+{
 	margin: -1.125em 0 1em 0;
     color: #c00010;
     font-size: 1.1em;
@@ -120,122 +123,126 @@ h6 {
     text-align: right;
 }
 
-/* h7 {
-
-	margin: 1em 0 0 0;
-    font-size: 1em;
-    line-height: 1.618em;
-    font-weight: bold;
-    text-align: center;
-} */
-
-hr {
-
+hr
+{
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #000000;
 }
 
-p {
-
+p
+{
 	margin: 0 0 0 0;
-    font-size: 1em; /* .875em */
+    font-size: 1em;
 	line-height: 1.618em;
 }
 
-a { text-decoration: none; }
-a { font-weight: bold;}
-a:link { color: #000000; }
-a:visited { color: #000000; }
-a:focus { color: #000000; }
-a:active { color: #000000; }
+a
+{
+    text-decoration: none;
+    font-weight: bold;
 
-a:hover {
+}
 
+a:link      { color: #000000; }
+a:visited   { color: #000000; }
+a:focus     { color: #000000; }
+a:active    { color: #000000; }
+
+a:hover
+{
     color: #C00010;
     transition: color 0.2s ease 0s;
 }
 
-a[href^="#top"] {
-
+a[href^="#top"]
+{
 	font-size: .75em;
 }
 
-ul { margin-bottom: 0em }
+ul
+{
+    margin-bottom: 0em;
+}
 
-li {
-
+li
+{
     margin: 0.5em 0 0 -1.35em;
-    font-size: 1em; /* 1.1em */
+    font-size: 1em;
 	line-height: 1.1em;
 }
 
 
-/*-----------------------
+
+/*--------
 Added Font
-------------------------*/
+--------*/
 
-@font-face {
-
+@font-face
+{
     font-family: Monorale;
     font-weight: 400;
     font-style: normal;
     src: url('https://cdn.rawgit.com/samvk/monorale-raleway-sober/master/woff/Monorale-Regular.woff') format('woff');
 }
 
-/* -----------------------
+
+
+/* ----------
 Article Posts
-------------------------*/
+-----------*/
 
-article {
-
+article
+{
 	padding-top: 1.5em;
     overflow: hidden;
 }
 
-.post {
-
+.post
+{
     padding: 1.5em;
     background-color: #ffffff;
     border: 1px solid #d1d1d1;
     border-top: 0px;
 }
 
-.list li {
-
+.list li
+{
     margin: 0.5em 0 0em -1.35em;
 	line-height: 1.618em;
 }
 
-article#blank-module {display: block}
-article#agile-methodology {display: none}
-article#data-structures {display: none}
-article#embedded-systems {display: none}
+article#blank-module        {display: block}
+article#agile-methodology   {display: none}
+article#data-structures     {display: none}
+article#embedded-systems    {display: none}
 
-/* -----------------------
+
+
+/* ---------
 Table Styles
-------------------------*/
+----------*/
 
-table {
-
+table
+{
 	border-spacing: 0;
 	border-collapse: collapse;
     table-layout: fixed;
 	margin: 1em 0 1.618em 0;
 }
 
-table#last {
-
+table#last
+{
     margin: 0 0 0 0;
 }
 
-tbody tr:nth-child(odd) {
-
+tbody tr:nth-child(odd)
+{
 	background-color: #E6E6E6;
 }
 
-th, td {
-
+th, td
+{
 	font-size: 1em;
     padding: .6em 0 .6em 0;
 	border: 1px solid #C6C6C6;
@@ -244,29 +251,28 @@ th, td {
 	white-space: nowrap;
 }
 
-td:first-child {
-
+td:first-child
+{
     width: 16.18em;
 }
 
-td:not(:first-child):not(:last-child) {
-
+td:not(:first-child):not(:last-child)
+{
     width: 10em;
 }
 
-td:last-child {
-
+td:last-child
+{
     width: 16.18em;
 }
 
-.aligned-divs table {
-
+.aligned-divs table
+{
     margin: 0.5em -2px 0.86em 0;
-
 }
 
-.aligned-divs td:not(:first-child) {
-
+.aligned-divs td:not(:first-child)
+{
     width: 30em;
 }
 
@@ -274,89 +280,93 @@ td:last-child {
 *See link for more responsive table styling options, explanation etc.
 */
 
-.table-container /*Add a scrollbar to a table for small screen devices*/ {
-
+.table-container /*Add a scrollbar to a table for small screen devices*/
+{
 	width: 100%;
 	overflow-x: auto;
 }
 
-.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/ {
-
+.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/
+{
 	-webkit-appearance: none;
 	width: 14px;
 	height: 14px;
 }
 
-.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/ {
-
+.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/
+{
 	border-radius: 8px;
 	border: 3px solid #fff;
 	background-color: rgba(0, 0, 0, .3);
 }
 
-/* -----------------
+
+
+/*------------------
 Custom Table Layouts
 ------------------*/
 
-#showcase-build table {
-
+#showcase-build table
+{
 	margin-bottom: 0.66em;
 }
 
-#showcase-build td {
+#showcase-build td
+{
+    /* TODO: Place this inside two light grey boxes, then centre the text-align */
 
-    width: 25em;
+    width: 27.5em;
     text-align: left;
-    padding: 0 0 0 0;
+    padding: 0.5em 0 0 0em;
     border-style: none;
     background-color: #ffffff;
 }
 
-#showcase-build td:nth-child(1) {
-
+#showcase-build td:nth-child(1)
+{
     width: 4.9em;
 }
 
-#showcase-build td:nth-child(3) {
-
+#showcase-build td:nth-child(3)
+{
     width: 7.5em;
 }
 
-#cpu-timings table {
-
+#cpu-timings table
+{
 	margin-bottom: 0.5em;
 }
 
-#cpu-timings td:last-child {
-
+#cpu-timings td:last-child
+{
     width: 10em;
 }
 
-#cpu-timings td:last-child {
-
+#cpu-timings td:last-child
+{
     width: 10em;
 }
 
-#ram-timings table {
-
+#ram-timings table
+{
 	margin-bottom: 0.45em;
 }
 
-#ram-timings th:nth-child(4) {
-
+#ram-timings th:nth-child(4)
+{
     border-style: none;
     background-color: #ffffff;
 }
 
-#ram-timings td:nth-child(4) {
-
+#ram-timings td:nth-child(4)
+{
     width: 24px;
     border-style: none;
     background-color: #ffffff;
 }
 
-#ram-timings td:not(:nth-child(4)) {
-
+#ram-timings td:not(:nth-child(4))
+{
     width: 122px;
 }
 
@@ -364,37 +374,35 @@ Custom Table Layouts
 Image and Video Layout
 --------------------*/
 
-img {
-
+img
+{
 	display: block;
     max-width: 100%;
     border: 1px solid;
     margin-top: 0.5em;
-
 }
 
-img.comparison {
-
+img.comparison
+{
     display: inline-block;
     max-width: 100%;
-
 }
 
-.aligned-div-left {
-
+.aligned-div-left
+{
     max-width: 48.18%;
     float: left;
 }
 
-.aligned-div-right {
-
+.aligned-div-right
+{
     padding-left: 1.625em;
     max-width: 48.18%;
     float: left;
 }
 
-.iframe-container iframe {
-
+.iframe-container iframe
+{
     top: 0;
 	left: 0;
 	height: 29.84em;
@@ -407,15 +415,15 @@ img.comparison {
 Menu Navigation - vertical layout for smaller screens
 ---------------------------------------------------*/
 
-#banner {
-
+#banner
+{
     top: 0;
     align-content: center;
     z-index: 1000;
 }
 
-#menu {
-
+#menu
+{
     padding: 0.618em 0em 0em 0em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -423,8 +431,8 @@ Menu Navigation - vertical layout for smaller screens
     text-align: center;
 }
 
-#logo h1 {
-
+#logo h1
+{
     float: center;
     font-size: 4em;
     text-align: center;
@@ -432,33 +440,40 @@ Menu Navigation - vertical layout for smaller screens
     padding: 0.7em 0em 0.5em 0em;
 }
 
-#logo a:link { color: #000000; }
+#logo a:link    { color: #000000; }
 #logo a:visited { color: #C00010; }
-#logo a:focus { color: #C00010; }
-#logo a:active { color: #C00010; }
-#logo a:hover { color: #C00010;
-                transition: color 0.2s ease 0s;
+#logo a:focus   { color: #C00010; }
+#logo a:active  { color: #C00010; }
+
+#logo a:hover
+{
+    color: #C00010;
+    transition: color 0.2s ease 0s;
 }
 
-#menu li {
-
+#menu li
+{
     display: inline;
     margin: 0 .5em 0 .5em;
 }
 
-#menu ul {
-
+#menu ul
+{
     margin: 0;
 	padding: 0;
 	list-style: none;
-
 }
 
-#menu a { padding: 0; }
-#menu a:link { color: #000000; }
+#menu a         { padding: 0; }
+#menu a:link    { color: #000000; }
 #menu a:visited { color: #000000; }
-#menu a:hover { color: #cc0010; transition: color 0.2s ease 0s; }
-#menu a:active { color: #C00010; }
+#menu a:active  { color: #C00010; }
+
+#menu a:hover
+{
+    color: #cc0010;
+    transition: color 0.2s ease 0s;
+}
 
 -
 
@@ -592,9 +607,7 @@ Mobile screens - portrait
     {
         max-width: 99.6%;
         height: 29.83em;
-
     }
-
 }
 
 /* float/clear classes */
@@ -604,11 +617,13 @@ Mobile screens - portrait
 	float: right;
 	margin-left: .5em;
 }
+
 .fltlt
 { /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
 	float: left;
 	margin-right: .5em;
 }
+
 .clear
 { /* this class can be placed on an element or empty div as the final element following the last floated div */
 	clear: both;
