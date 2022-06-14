@@ -572,6 +572,24 @@ Mobile screens - portrait
         white-space: nowrap;
     }
 
+    h3 {
+        text-align: left;
+    }
+
+    h4 {
+        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
+        text-align: left;
+    }
+
+    h5 {
+        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
+    }
+
+    h6 {
+        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
+        text-align: left;
+    }
+
     #footer
     {
         margin: 0.25em 0 0 0;
