@@ -229,6 +229,7 @@ table
 	border-collapse: collapse;
     table-layout: fixed;
 	margin: 1em 0 1.618em 0;
+    line-height: 1.2;
 }
 
 table#last
@@ -306,22 +307,6 @@ td:last-child
 Custom Table Layouts
 ------------------*/
 
-#showcase-build table
-{
-	margin-bottom: 0.66em;
-}
-
-#showcase-build td
-{
-    /* TODO: Place this inside two light grey boxes, then centre the text-align */
-
-    width: 27.5em;
-    text-align: left;
-    padding: 0.5em 0 0 0em;
-    border-style: none;
-    background-color: #ffffff;
-}
-
 #showcase-build td:nth-child(1)
 {
     width: 4.9em;
@@ -386,6 +371,7 @@ img.comparison
 {
     display: inline-block;
     max-width: 100%;
+    margin-top: 0.25em;
 }
 
 .aligned-div-left
@@ -410,6 +396,35 @@ img.comparison
     margin-top: 0.5em;
     border: 1px solid #404040;
 }
+
+#showcase-build .aligned-div-left
+{
+    float: left;
+    width: 21em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 0.9em;
+    border: 1px solid #C6C6C6;
+    background-color: #E6E6E6;
+}
+
+#showcase-build .aligned-div-right
+{
+    float: right;
+    width: 21em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 0.9em;
+    border: 1px solid #C6C6C6;
+    background-color: #E6E6E6;
+}
+
 
 /* --------------------------------------------------
 Menu Navigation - vertical layout for smaller screens
@@ -473,55 +488,6 @@ Menu Navigation - vertical layout for smaller screens
 {
     color: #cc0010;
     transition: color 0.2s ease 0s;
-}
-
--
-
-/* ---------------------------------------------------
-Wider screens - i.e. desktop, laptop, tablet landscape
-----------------------------------------------------*/
-
-@media (min-width: 51em)
-{
-	.banner
-    {
-        padding: 1.5em 3em 1.5em 3em;
-
-    }
-
-    main
-	{
-		float: left;
-		width: 100%;
-	}
-
-    .article
-    {
-        padding-top: 2em;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-	footer
-    {
-        padding: 10px 0em 0em 0em;
-        bottom: 0;
-        right: 0;
-    }
-
-	#menu li
-	{
-		display: inline;
-		margin: 0 0 0 0;
-	}
-
-	#menu a
-	{
-		display: inline;
-		padding: 0;
-		border-bottom: 0;
-        color: #fff;
-	}
 }
 
 /* ----------------------
