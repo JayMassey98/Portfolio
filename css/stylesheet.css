@@ -596,6 +596,11 @@ Mobile screens - portrait
         position: relative;
     }
 
+    img
+    {
+        height: min-content;
+    }
+
     img.comparison
     {
         display: inline;
@@ -621,10 +626,10 @@ Mobile screens - portrait
         margin: 0 0 0.86em 0;
     }
 
-    .iframe-container iframe
+    iframe
     {
-        max-width: 99.6%;
-        height: 29.83em;
+        width: 100%;
+        height: 100%;
     }
 }
 
