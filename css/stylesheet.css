@@ -301,6 +301,11 @@ td:last-child
 	background-color: rgba(0, 0, 0, .3);
 }
 
+.university-work tr:first-child th
+{
+   padding-top: 0.65em;
+   padding-bottom: 0.55em;
+}
 
 
 /*------------------
