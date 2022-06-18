@@ -31,7 +31,7 @@ main
 
 #wrapper
 {
-    margin: 0;
+    margin: 0.125em 0 0 0;
     overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ footer
     line-height: 1.2em;
     background-color: #ffffff;
     border: 1px solid #D1D1D1;
-    border-bottom: 0px;
+    border-bottom: 0;
     margin-top: 1.375em;
     margin-bottom: -1.5em;
 }
@@ -79,7 +79,11 @@ h1
     color: #c00;
     font-size: 1.375em;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0.0625em 0 -3px 0;
+}
+
+.post h1 {
+    margin: -0.125em 0 0.55em 0;
 }
 
 h2
@@ -88,27 +92,27 @@ h2
     font-size: 1.375em;
     text-transform: uppercase;
     padding-top: 1.375em;
-    margin: 0;
+    margin: 0 0 0.55em 0;
 }
 
 h3
 {
-	margin: -0.5em 0 0.05em 0;
-    font-size: 1.15em;
+	margin: 1.25em 0 0 0;
+    font-size: 1.125em;
     font-weight: bold;
 }
 
 h4
 {
-	margin: -1.125em 0 0.05em 0;
-    font-size: 1.15em;
+	margin: -1.125em 0 0 0;
+    font-size: 1.125em;
     font-style: italic;
     text-align: right;
 }
 
 h5
 {
-	margin: 0.4em 0 0 0;
+	margin: 0.35em 0 0 0;
     font-size: 1.1em;
     font-style: italic;
     font-weight: normal;
@@ -116,7 +120,7 @@ h5
 
 h6
 {
-	margin: -1.125em 0 1em 0;
+	margin: -1.125em 0 1.125em 0;
     color: #c00010;
     font-size: 1.1em;
     font-style: normal;
@@ -132,10 +136,12 @@ hr
 
 p
 {
-	margin: 0 0 0 0;
+    margin: 0 0 -0.1875em 0;
     font-size: 1em;
-	line-height: 1.618em;
+	line-height: 1.625em;
 }
+
+
 
 a
 {
@@ -169,9 +175,8 @@ li
 {
     margin: 0.5em 0 0 -1.35em;
     font-size: 1em;
-	line-height: 1.1em;
+	line-height: 1.125em;
 }
-
 
 
 /*--------
@@ -200,10 +205,10 @@ article
 
 .post
 {
-    padding: 1.5em;
+    padding: 1.5em 1.5em 1.5625em 1.5em;
     background-color: #ffffff;
     border: 1px solid #d1d1d1;
-    border-top: 0px;
+    border-top: 0;
 }
 
 .list li
@@ -245,11 +250,21 @@ tbody tr:nth-child(odd)
 th, td
 {
 	font-size: 1em;
-    padding: .6em 0 .6em 0;
+    padding: 0.625em 0 0.625em 0;
 	border: 1px solid #C6C6C6;
 	vertical-align: top;
 	text-align: center;
 	white-space: nowrap;
+}
+
+.university-post th, td
+{
+    padding: 0.5882352955em 0 0.5882352955em 0; /* 0.625em - 1px for bold text */
+}
+
+.university-work
+{
+    margin: 1.3215em 0 2.1875em 0;
 }
 
 td:first-child
@@ -469,20 +484,19 @@ Menu Navigation - vertical layout for smaller screens
 
 #menu
 {
-    padding: 0.618em 0em 0em 0em;
+    padding: 0.618em 0 3px 0;
 	text-transform: uppercase;
 	font-weight: bold;
-    font-size: 1.618em;
+    font-size: 1.625em;
     text-align: center;
 }
 
 #logo h1
 {
-    float: center;
     font-size: 4em;
     text-align: center;
     text-transform: none;
-    padding: 0.7em 0em 0.5em 0em;
+    padding: 0.7em 0 0.5em 0;
 }
 
 #logo a:link    { color: #000000; }
@@ -499,7 +513,7 @@ Menu Navigation - vertical layout for smaller screens
 #menu li
 {
     display: inline;
-    margin: 0 .5em 0 .5em;
+    margin: 0 0.5em 0 0.5em;
 }
 
 #menu ul
@@ -536,8 +550,8 @@ Mobile screens - portrait
     #banner
     {
         width: 100%;
-        margin-top: 0em;
-        border: 0px solid;
+        margin-top: 0;
+        border: 0 solid;
         padding-bottom: 1px;
         text-align: center;
         background-position: center;
@@ -555,13 +569,13 @@ Mobile screens - portrait
 
     .article
     {
-        border: 0px solid #000000;
+        border: 0 solid #000000;
     }
 
     th, td
     {
         font-size: 100%;
-        padding: .2em 1em .2em 1em;
+        padding: 0.2em 1em 0.2em 1em;
         border: 1px solid #ddd;
         vertical-align: top;
         text-align: center;
@@ -611,7 +625,7 @@ Mobile screens - portrait
 
     .aligned-div-right
     {
-        padding-left: 0em;
+        padding-left: 0;
         max-width: 100%;
     }
 
@@ -634,13 +648,13 @@ Mobile screens - portrait
 .fltrt
 {  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
 	float: right;
-	margin-left: .5em;
+	margin-left: 0.5em;
 }
 
 .fltlt
 { /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
 	float: left;
-	margin-right: .5em;
+	margin-right: 0.5em;
 }
 
 .clear
