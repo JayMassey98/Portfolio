@@ -49,7 +49,6 @@ footer
 
 #footer_large
 {
-    margin-top: 1.5em;
     border-top: 1px solid #C6C6C6;
     border-bottom: 1px solid #C6C6C6;
     position: relative;
@@ -197,6 +196,7 @@ Article Posts
 article
 {
 	padding-top: 1.5em;
+    padding-bottom: 1.5em;
     overflow: hidden;
 }
 
@@ -575,12 +575,17 @@ Mobile screens - portrait
         padding-bottom: 0.5em;
     }
 
+    #wrapper
+    {
+        background-color: #FFF;
+    }
+
     #banner
     {
+        border: 0;
         width: 100%;
         margin-top: 0;
-        border: 0 solid;
-        padding-bottom: 1px;
+        margin-bottom: 0;
         text-align: center;
         background-position: center;
     }
@@ -668,6 +673,53 @@ Mobile screens - portrait
     {
         width: 100%;
         height: 100%;
+    }
+
+    img.project
+    {
+        margin-bottom: -1px;
+    }
+
+    .project
+    {
+        margin-bottom: 1.5em;
+    }
+
+    .project-image
+    {
+        float: right;
+        width: 99.5%;
+        height: 99.5%;
+    }
+
+    .project-outline
+    {
+        float: right;
+        width: 99.5%;
+        height: 99.5%;
+    }
+
+    html
+    {
+        border: 1px solid #D1D1D1;
+    }
+
+
+
+    .post
+    {
+        border: 0;
+    }
+
+    article
+    {
+        padding: 0;
+        background-color: #FFF;
+    }
+    
+    footer
+    {
+        border-bottom: 0;
     }
 }
 
