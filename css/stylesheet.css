@@ -64,7 +64,7 @@ footer
     background-color: #ffffff;
     border: 1px solid #D1D1D1;
     border-bottom: 0;
-    margin-top: 1.375em;
+    margin-top: 1.4em;
     margin-bottom: -1.5em;
 }
 
@@ -77,11 +77,13 @@ h1
 {
     color: #c00;
     font-size: 1.375em;
+    text-align: center;
     text-transform: uppercase;
     margin: 0.0625em 0 -3px 0;
 }
 
-.post h1 {
+.post h1
+{
     margin: -0.125em 0 0.55em 0;
 }
 
@@ -89,6 +91,7 @@ h2
 {
     color: #c00;
     font-size: 1.375em;
+    text-align: center;
     text-transform: uppercase;
     padding-top: 1.375em;
     margin: 0 0 0.55em 0;
@@ -112,6 +115,7 @@ h4
 h5
 {
 	margin: 0.35em 0 0 0;
+    color: #c00010;
     font-size: 1.1em;
     font-style: italic;
     font-weight: normal;
@@ -138,6 +142,7 @@ p
     margin: 0 0 -0.1875em 0;
     font-size: 1em;
 	line-height: 1.625em;
+    text-align: center;
 }
 
 a
@@ -164,14 +169,23 @@ a[href^="#top"]
 
 ul
 {
-    margin-bottom: 0em;
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
 }
 
 li
 {
-    margin: 0.5em 0 0 -1.35em;
+    margin: 0.5em 0 0 0;
     font-size: 1em;
 	line-height: 1.125em;
+}
+
+li:nth-child(2n)
+{
+    color: #606060;
 }
 
 
@@ -524,7 +538,7 @@ Menu Navigation - vertical layout for smaller screens
     font-size: 4em;
     text-align: center;
     text-transform: none;
-    padding: 0.7em 0 0.5em 0;
+    padding: 0.725em 0 0.64em 0;
 }
 
 #logo a:link    { color: #000000; }
@@ -740,4 +754,18 @@ Mobile screens - portrait
 .clear
 { /* this class can be placed on an element or empty div as the final element following the last floated div */
 	clear: both;
+}
+
+
+/*-----------------------
+Split Screen Readjustment
+-----------------------*/
+
+@media (width : 59.875em)
+{
+    #logo h1
+    {
+        font-size: 3.8em;
+        padding: 0.68em 0 0.6em 0; /* 0.18125x, 0x, 0.16x, 0x */
+    }
 }
