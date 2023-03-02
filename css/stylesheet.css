@@ -9,146 +9,146 @@ html
 
 body
 {
-	font-family: "Monorale", "Raleway", "Calibri", sans-serif;
-	font-size: 100%;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
+  font-family: "Monorale", "Raleway", "Calibri", sans-serif;
+  font-size: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 main
 {
-    float: left;
-    width: 100%;
-}
-
-#center
-{
-    width: 814px;
-    margin: auto;
+  float: left;
+  width: 100%;
 }
 
 #wrapper
 {
-    margin: 0.125em 0 0 0;
-    overflow: hidden;
-}
-
-footer
-{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1.375em;
-    color: #fff;
-    background: #E6E6E6;
-    text-align: center;
-    padding: 0.5625em 0 0.4375em 0;
-}
-
-#footer_large
-{
-    border-top: 1px solid #C6C6C6;
-    border-bottom: 1px solid #C6C6C6;
-    position: relative;
+  margin: 0.125em 0 0 0;
+  overflow: hidden;
 }
 
 #banner
 {
-    top: 0;
-    left: 0;
-    width: 812px;
-    margin: auto;
-    line-height: 1.2em;
-    background-color: #ffffff;
-    border: 1px solid #D1D1D1;
-    border-bottom: 0;
-    margin-top: 1.4em;
-    margin-bottom: -1.5em;
+  align-content: center;
+  background-color: #ffffff;
+  border: 1px solid #D1D1D1;
+  border-bottom: 0;
+  left: 0;
+  line-height: 1.2em;
+  margin: auto;
+  margin-bottom: -1.5em;
+  margin-top: 1.4em;
+  top: 0;
+  width: 812px;
+  z-index: 1000;
+}
+
+#menu
+{
+  font-size: 1.625em;
+  font-weight: bold;
+  padding: 0.318em 0 0.2em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#menu li
+{
+  display: inline;
+  margin: 0 0.5em 0 0.5em;
+}
+
+#menu ul
+{
+  list-style: none;
+  margin: 0 0 -10em 0;
+  padding: 0;
+}
+
+#menu a         { padding: 0; }
+#menu a:link    { color: #000000; }
+#menu a:visited { color: #000000; }
+#menu a:active  { color: #C00010; }
+
+#menu a:hover
+{
+  color: #cc0010;
+  transition: color 0.2s ease 0s;
+}
+
+#center
+{
+  margin: auto;
+  width: 814px;
+}
+
+footer
+{
+  background: #E6E6E6;
+  border-bottom: 1px solid #C6C6C6;
+  border-top: 1px solid #C6C6C6;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  height: 1.375em;
+  padding: 0.5625em 0 0.4375em 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 
+
 /*--------
-Text Sizes
+Font Sizes
 --------*/
 
 h1
 {
-    color: #c00;
-    font-size: 1.375em;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0.0625em 0 -3px 0;
-}
-
-.post h1
-{
-    margin: -0.125em 0 0.55em 0;
+  color: #c00;
+  font-size: 4em;
+  padding: 0.0675em 0 0 0;
+  text-align: center;
 }
 
 h2
 {
-    color: #c00;
-    font-size: 1.375em;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 1.375em;
-    margin: 0 0 0.55em 0;
+  color: #c00;
+  font-size: 1.375em;
+  margin: 0 0 0.55em 0;
+  padding-top: 1.375em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h3
 {
-	margin: 1.25em 0 0 0;
-    font-size: 1.125em;
-    font-weight: bold;
-}
-
-h4
-{
-	margin: -1.125em 0 0 0;
-    font-size: 1.125em;
-    font-style: italic;
-    text-align: right;
-}
-
-h5
-{
-	margin: 0.35em 0 0 0;
-    color: #c00010;
-    font-size: 1.1em;
-    font-style: italic;
-    font-weight: normal;
-}
-
-h6
-{
-	margin: -1.125em 0 1.125em 0;
-    color: #c00010;
-    font-size: 1.1em;
-    font-style: normal;
-    text-align: right;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 1.25em 0 0 0;
 }
 
 hr
 {
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #000000;
+  border: 0;
+  border-top: 1px solid #000000;
+  margin-bottom: 20px;
 }
 
 p
 {
-    margin: 0 0 -0.1875em 0;
-    font-size: 1em;
-	line-height: 1.625em;
-    text-align: center;
+  font-size: 1em;
+  line-height: 1.625em;
+  margin: 0 0 -0.1875em 0;
+  text-align: center;
 }
 
 a
 {
-    text-decoration: none;
-    font-weight: bold;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:link      { color: #000000; }
@@ -158,47 +158,42 @@ a:active    { color: #000000; }
 
 a:hover
 {
-    color: #C00010;
-    transition: color 0.2s ease 0s;
+  color: #C00010;
+  transition: color 0.2s ease 0s;
 }
 
 a[href^="#top"]
 {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 ul
 {
-    list-style-type: none;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
 }
 
 li
 {
-    margin: 0.5em 0 0 0;
-    font-size: 1em;
-	line-height: 1.125em;
+  font-size: 1em;
+  line-height: 1.125em;
+  margin: 0.5em 0 0 0;
 }
 
 li:nth-child(2n)
 {
-    color: #606060;
+  color: #505050;
 }
-
-
-/*--------
-Added Font
---------*/
 
 @font-face
 {
-    font-family: Monorale;
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://cdn.rawgit.com/samvk/monorale-raleway-sober/master/woff/Monorale-Regular.woff') format('woff');
+  font-family: Monorale;
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.rawgit.com/samvk/monorale-raleway-sober/master/woff/Monorale-Regular.woff') format('woff');
 }
 
 
@@ -209,29 +204,24 @@ Article Posts
 
 article
 {
-	padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    overflow: hidden;
+  overflow: hidden;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 .post
 {
-    padding: 1.5em 1.5em 1.5625em 1.5em;
-    background-color: #ffffff;
-    border: 1px solid #d1d1d1;
-    border-top: 0;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-top: 0;
+  padding: 1.5em 1.5em 1.5625em 1.5em;
 }
 
 .list li
 {
-    margin: 0.5em 0 0em -1.35em;
-	line-height: 1.618em;
+  line-height: 1.618em;
+  margin: 0.5em 0 0em -1.35em;
 }
-
-article#blank-module        {display: block}
-article#agile-methodology   {display: none}
-article#data-structures     {display: none}
-article#embedded-systems    {display: none}
 
 
 
@@ -241,16 +231,16 @@ Table Styles
 
 table
 {
-	border-spacing: 0;
-	border-collapse: collapse;
-    table-layout: fixed;
-	margin: 1em 0 1.618em 0;
-    line-height: 1.2;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1.2;
+  margin: 1em 0 1.618em 0;
+  table-layout: fixed;
 }
 
 table#last
 {
-    margin: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 tbody tr:nth-child(odd)
@@ -260,148 +250,124 @@ tbody tr:nth-child(odd)
 
 th, td
 {
-	font-size: 1em;
-    padding: 0.625em 0 0.625em 0;
-	border: 1px solid #C6C6C6;
-	vertical-align: top;
-	text-align: center;
-	white-space: nowrap;
+  border: 1px solid #C6C6C6;
+  font-size: 1em;
+  padding: 0.625em 0 0.625em 0;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .university-post th, td
 {
-    padding: 0.5882352955em 0 0.5882352955em 0; /* 0.625em - 1px for bold text */
+  padding: 0.5882352955em 0 0.5882352955em 0; /* 0.625em - 1px for bold text */
 }
 
 .university-work
 {
-    margin: 1.3215em 0 2.1875em 0;
+  margin: 1.3215em 0 0.3em 0;
 }
 
 td:first-child
 {
-    width: 16.18em;
+  width: 16.18em;
 }
 
 td:not(:first-child):not(:last-child)
 {
-    width: 10em;
+  width: 10em;
 }
 
 td:last-child
 {
-    width: 16.18em;
+  width: 16.18em;
 }
 
 .aligned-divs table
 {
-    margin: 0.5em -2px 0.86em 0;
+  margin: 0.5em -2px 0.86em 0;
 }
 
 .aligned-divs td:not(:first-child)
 {
-    width: 30em;
+  width: 30em;
 }
 
 .project
 {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .project-outline
 {
-    width: 406px;
-    display: block;
-    text-align: center;
-    border: 1px solid #C6C6C6;
-    background: #F0F0F0;
-    height: 11.6875em;
+  background: #F0F0F0;
+  border: 1px solid #C6C6C6;
+  display: block;
+  height: 11.6875em;
+  text-align: center;
+  width: 406px;
 }
 
 img.project
 {
-    margin-top: 0;
-    margin-bottom: 1.5em;
-    float: right;
-    width: 332px;
-    height: 187px;
-    border: 1px solid #C6C6C6;
+  border: 1px solid #C6C6C6;
+  float: right;
+  height: 187px;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  width: 332px;
 }
 
-
-/**Responsive table styles sourced from http://maxdesign.com.au/articles/simple-responsive-table/
-*See link for more responsive table styling options, explanation etc.
-*/
-
-.table-container /*Add a scrollbar to a table for small screen devices*/
+.table-container
 {
-	width: 100%;
-	overflow-x: auto;
-}
-
-.table-container::-webkit-scrollbar /*Add the scrollbar to an iOS mobile browser*/
-{
-	-webkit-appearance: none;
-	width: 14px;
-	height: 14px;
-}
-
-.table-container::-webkit-scrollbar-thumb /*Add the scrollbar to an iOS mobile browser*/
-{
-	border-radius: 8px;
-	border: 3px solid #fff;
-	background-color: rgba(0, 0, 0, .3);
+  overflow-x: auto;
+  width: 100%;
 }
 
 .university-work tr:first-child th
 {
-   padding-top: 0.65em;
-   padding-bottom: 0.55em;
+  padding-bottom: 0.55em;
+  padding-top: 0.65em;
 }
 
 .university-work td:nth-child(1)
 {
-    width: 14.6875em
+  width: 14.6875em
 }
 
 .university-work td:nth-child(2)
 {
-    width: 6em
+  width: 6em
 }
 
 .university-work td:nth-child(3)
 {
-    width: 6em
+  width: 6em
 }
 
 .university-work td:nth-child(4)
 {
-    width: 6em
+  width: 6em
 }
 
 .university-work td:nth-child(5)
 {
-    width: 14.6875em
+  width: 14.6875em
 }
 
 #projects-page
 {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
-
-
-/*------------------
-Custom Table Layouts
-------------------*/
 
 #showcase-build td:nth-child(1)
 {
-    width: 4.9em;
+  width: 4.9em;
 }
 
 #showcase-build td:nth-child(3)
 {
-    width: 7.5em;
+  width: 7.5em;
 }
 
 #cpu-timings table
@@ -411,36 +377,38 @@ Custom Table Layouts
 
 #cpu-timings td:last-child
 {
-    width: 10em;
+  width: 10em;
 }
 
 #cpu-timings td:last-child
 {
-    width: 10em;
+  width: 10em;
 }
 
 #ram-timings table
 {
-	margin-bottom: 0.45em;
+	margin-bottom: 0.25em;
 }
 
 #ram-timings th:nth-child(4)
 {
-    border-style: none;
-    background-color: #ffffff;
+  background-color: #ffffff;
+  border-style: none;
 }
 
 #ram-timings td:nth-child(4)
 {
-    width: 24px;
-    border-style: none;
-    background-color: #ffffff;
+  background-color: #ffffff;
+  border-style: none;
+  width: 24px;
 }
 
 #ram-timings td:not(:nth-child(4))
 {
-    width: 122px;
+  width: 122px;
 }
+
+
 
 /* -------------------
 Image and Video Layout
@@ -448,324 +416,250 @@ Image and Video Layout
 
 img
 {
-	display: block;
-    max-width: 100%;
-    border: 1px solid;
-    margin-top: 0.5em;
+  border: 1px solid;
+  display: block;
+  margin-top: 0.5em;
+  max-width: 100%;
 }
 
 img.comparison
 {
-    display: inline-block;
-    max-width: 100%;
-    margin-top: 0.25em;
+  display: inline-block;
+  margin-top: 0.25em;
+  max-width: 100%;
 }
 
 .aligned-div-left
 {
-    max-width: 48.18%;
-    float: left;
+  float: left;
+  max-width: 48.18%;
 }
 
 .aligned-div-right
 {
-    padding-left: 1.625em;
-    max-width: 48.18%;
-    float: left;
+  float: left;
+  max-width: 48.18%;
+  padding-left: 1.625em;
 }
 
 .iframe-container iframe
 {
-    top: 0;
-	left: 0;
-	height: 29.84em;
-    width: 99.8%;
-    margin-top: 0.5em;
-    border: 1px solid #404040;
+  border: 1px solid #404040;
+  height: 29.84em;
+  left: 0;
+  margin-top: 0.5em;
+  top: 0;
+  width: 99.8%;
 }
 
 #showcase-build .aligned-div-left
 {
-    float: left;
-    width: 21em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
-    padding-top: 1em;
-    padding-bottom: 0.9em;
-    border: 1px solid #C6C6C6;
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
+  border: 1px solid #C6C6C6;
+  float: left;
+  margin-bottom: 0.5em;
+  margin-top: 1.25em;
+  padding-bottom: 0.9em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  width: 21em;
 }
 
 #showcase-build .aligned-div-right
 {
-    float: right;
-    width: 21em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
-    padding-top: 1em;
-    padding-bottom: 0.9em;
-    border: 1px solid #C6C6C6;
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
+  border: 1px solid #C6C6C6;
+  float: right;
+  margin-bottom: 0.5em;
+  margin-top: 1.25em;
+  padding-bottom: 0.9em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  width: 21em;
 }
 
 
-/* --------------------------------------------------
-Menu Navigation - vertical layout for smaller screens
----------------------------------------------------*/
 
-#banner
+/* -------
+Scrollbars
+--------*/
+
+.table-container::-webkit-scrollbar
 {
-    top: 0;
-    align-content: center;
-    z-index: 1000;
+  height: 14px;
+  width: 14px;
+  -webkit-appearance: none;
 }
 
-#menu
+.table-container::-webkit-scrollbar-thumb
 {
-    padding: 0.318em 0 0.35em 0;
-	text-transform: uppercase;
-	font-weight: bold;
-    font-size: 1.625em;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid #fff;
+  border-radius: 8px;
 }
 
-#logo h1
-{
-    font-size: 4em;
-    text-align: center;
-    text-transform: none;
-    padding: 0.695em 0 0.695em 0;
-}
 
-#logo a:link    { color: #000000; }
-#logo a:visited { color: #C00010; }
-#logo a:focus   { color: #C00010; }
-#logo a:active  { color: #C00010; }
 
-#logo a:hover
-{
-    color: #C00010;
-    transition: color 0.2s ease 0s;
-}
-
-#menu li
-{
-    display: inline;
-    margin: 0 0.5em 0 0.5em;
-}
-
-#menu ul
-{
-    margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#menu a         { padding: 0; }
-#menu a:link    { color: #000000; }
-#menu a:visited { color: #000000; }
-#menu a:active  { color: #C00010; }
-
-#menu a:hover
-{
-    color: #cc0010;
-    transition: color 0.2s ease 0s;
-}
-
-/* ----------------------
-Mobile screens - portrait
------------------------*/
+/* -----------
+Mobile Screens
+-------------*/
 
 @media (max-width : 52em)
 {
-    #menu li
-    {
-        display: block;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    }
-
-    #wrapper
-    {
-        background-color: #FFF;
-    }
-
-    #banner
-    {
-        border: 0;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: center;
-        background-position: center;
-    }
-
-    #center
-    {
-        width: 100%;
-    }
-
-    main
-    {
-        width: 100%;
-    }
-
-    .article
-    {
-        border: 0 solid #000000;
-    }
-
-    th, td
-    {
-        font-size: 100%;
-        padding: 0.2em 1em 0.2em 1em;
-        border: 1px solid #ddd;
-        vertical-align: top;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    h3 {
-        text-align: left;
-    }
-
-    h4 {
-        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
-        text-align: left;
-    }
-
-    h5 {
-        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
-    }
-
-    h6 {
-        margin: 0.38198205906em 0 0 0; /* 1 / Golden Ratio / Golden Ratio */
-        text-align: left;
-    }
-
-    #footer
-    {
-        margin: 0.25em 0 0 0;
-        position: relative;
-    }
-
-    img
-    {
-        height: min-content;
-    }
-
-    img.comparison
-    {
-        display: inline;
-        max-width: 100%;
-    }
-
-    .aligned-div-left
-    {
-        max-width: 100%;
-        float: left;
-    }
-
-    .aligned-div-right
-    {
-        padding-left: 0;
-        max-width: 100%;
-    }
-
-    .aligned-divs table
-    {
-        align-content: center;
-        max-width: 100.2%;
-        margin: 0 0 0.86em 0;
-    }
-
-    iframe
-    {
-        width: 100%;
-        height: 100%;
-    }
-
-    img.project
-    {
-        margin-bottom: -1px;
-    }
-
-    .project
-    {
-        margin-bottom: 1.5em;
-    }
-
-    .project-image
-    {
-        float: right;
-        width: 99.5%;
-        height: 99.5%;
-    }
-
-    .project-outline
-    {
-        float: right;
-        width: 99.5%;
-        height: 99.5%;
-    }
-
-    html
-    {
-        border: 1px solid #D1D1D1;
-    }
-
-
-
-    .post
-    {
-        border: 0;
-    }
-
-    article
-    {
-        padding: 0;
-        background-color: #FFF;
-    }
+  #menu
+  {
+    padding-bottom: 7.65em;
+  }
     
-    footer
-    {
-        border-bottom: 0;
-    }
+  #menu li
+  {
+    display: block;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
+
+  #wrapper
+  {
+    background-color: #FFF;
+  }
+
+  #banner
+  {
+    background-position: center;
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #center
+  {
+    width: 100%;
+  }
+
+  .article
+  {
+    border: 0;
+  }
+
+  th, td
+  {
+    border: 1px solid #ddd;
+    font-size: 100%;
+    padding: 0.2em 1em 0.2em 1em;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  h3
+  {
+    text-align: left;
+  }
+
+  #footer
+  {
+    margin: 0.25em 0 0 0;
+    position: relative;
+  }
+
+  img
+  {
+    height: min-content;
+  }
+
+  img.comparison
+  {
+    display: inline;
+    max-width: 100%;
+  }
+
+  .aligned-div-left
+  {
+    float: left;
+    max-width: 100%;
+  }
+
+  .aligned-div-right
+  {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .aligned-divs table
+  {
+    align-content: center;
+    margin: 0 0 0.86em 0;
+    max-width: 100.2%;
+  }
+
+  iframe
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  img.project
+  {
+    margin-bottom: -1px;
+  }
+
+  .project
+  {
+    margin-bottom: 1.5em;
+  }
+
+  .project-image
+  {
+    float: right;
+    height: 99.5%;
+    width: 99.5%;
+  }
+
+  .project-outline
+  {
+    float: right;
+    height: 99.5%;
+    width: 99.5%;
+  }
+
+  html
+  {
+    border: 1px solid #D1D1D1;
+  }
+
+  .post
+  {
+    border: 0;
+  }
+
+  article
+  {
+    background-color: #FFF;
+    padding: 0;
+  }
+    
+  footer
+  {
+    border-bottom: 0;
+  }
+
 }
 
-/* float/clear classes */
-
-.fltrt
-{  /* this class can be used to float an element e.g. image right in the page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 0.5em;
-}
-
-.fltlt
-{ /* this class can be used to float an element e.g. image left in the page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 0.5em;
-}
-
-.clear
-{ /* this class can be placed on an element or empty div as the final element following the last floated div */
-	clear: both;
-}
 
 
-/*-----------------------
-Split Screen Readjustment
------------------------*/
+/*------------------
+Desktop Split Screen
+------------------*/
 
 @media (width : 59.875em)
 {
-    #logo h1
-    {
-        font-size: 3.7em;
-        padding: 0.67em 0 0.67em 0;
-    }
+  h1
+  {
+    font-size: 3.75em;
+    padding: 0em;
+  }
 }
